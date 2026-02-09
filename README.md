@@ -1,70 +1,43 @@
 # Verilog HDL Projects
 
-This repository contains a collection of **Verilog HDL projects** developed for learning and practicing **digital design concepts**, simulation, and synthesis using **Xilinx Vivado**.
+A collection of small Verilog HDL projects developed for learning and practicing
+digital logic design using **Xilinx Vivado**.
 
-Each project is organized in its own folder with source files and a dedicated README.
+Each project is organized in its own folder with source files and a brief description.
 
 ---
 
-## 📂 Projects Included
+## 📂 Projects
 
-### 🔹 Full Adder
+### Full Adder
 **Folder:** `FullAdder/`
 
-- Implementation of a **1-bit Full Adder** using **two Half Adders**
-- Demonstrates **hierarchical design** in Verilog
-- Includes a **testbench** that verifies all input combinations
-- Simulated and verified using **Vivado XSim**
+- 1-bit Full Adder implemented using two Half Adders
+- Includes a testbench for functional verification
+- Simulated using Vivado XSim
 
-📁 Files:
+**Files:**
 - `HalfAdder.v`
 - `FullAdder.v`
 - `FullAdderTB.v`
 
-📌 Concepts Covered:
+**Concepts:**
 - Combinational logic
-- Gate-level modeling
-- Module instantiation
+- Hierarchical design
 - Testbench creation
-- Waveform analysis
 
 ---
 
-## 🛠 Tools & Technologies
-
-- **Language:** Verilog HDL
-- **EDA Tool:** Xilinx Vivado (2018.2)
-- **Simulator:** XSim
-
----
-
-## 🎯 Purpose
-
-This repository is intended for:
-- Learning Verilog HDL
-- Understanding digital logic design
-- Academic coursework and lab practice
-- Preparing for exams such as **GATE (ECE)**
+## 🛠 Tools
+- Verilog HDL
+- Xilinx Vivado (2018.2)
 
 ---
 
 ## 👤 Author
-
-**Pavan Kumar Reddy Kamatham**  
-RGUKT Srikakulam  
+**Pavan Kumar Reddy Kamatham**
 
 ---
 
-## 📌 Future Additions
-
-- Ripple Carry Adder
-- Multiplexers & Demultiplexers
-- Encoders & Decoders
-- Sequential Circuits (Flip-Flops, Counters)
-- FSM-based designs
-
----
-
-## 📜 License
-
-This repository is maintained for educational purposes.
+## 📌 Note
+This repository is for educational and practice purposes.
