@@ -1,80 +1,50 @@
-# Full Adder in Verilog (Vivado)
+# Verilog HDL Projects
 
-This repository contains a Verilog implementation of a **Full Adder** designed using **two Half Adders**, along with a **testbench** for functional verification.  
-The project was developed and simulated using **Xilinx Vivado 2018.2**.
+This repository contains a collection of **Verilog HDL projects** developed for learning and practicing **digital design concepts**, simulation, and synthesis using **Xilinx Vivado**.
 
----
-
-## 📌 Project Overview
-
-A **Full Adder** is a combinational logic circuit that adds three 1-bit inputs:
-- Input A
-- Input B
-- Carry-in (Cin)
-
-and produces:
-- Sum
-- Carry-out (Cout)
-
-In this project:
-- The Full Adder is built hierarchically using **two Half Adders**
-- A testbench applies all possible input combinations (000–111)
+Each project is organized in its own folder with source files and a dedicated README.
 
 ---
 
-## 📂 Files Description
+## 📂 Projects Included
 
-| File Name | Description |
-|---------|------------|
-| `HalfAdder.v` | Gate-level implementation of a Half Adder |
-| `FullAdder.v` | Full Adder built using two Half Adders |
-| `FullAdderTB.v` | Testbench to verify Full Adder functionality |
+### 🔹 Full Adder
+**Folder:** `FullAdder/`
 
----
+- Implementation of a **1-bit Full Adder** using **two Half Adders**
+- Demonstrates **hierarchical design** in Verilog
+- Includes a **testbench** that verifies all input combinations
+- Simulated and verified using **Vivado XSim**
 
-## 🔧 Design Details
+📁 Files:
+- `HalfAdder.v`
+- `FullAdder.v`
+- `FullAdderTB.v`
 
-### Half Adder
-- **Sum** = A ⊕ B  
-- **Carry** = A · B  
-
-### Full Adder
-Implemented using:
-- Half Adder 1: adds A and B
-- Half Adder 2: adds intermediate sum and Cin
-- OR gate to generate final Carry
-
----
-
-## 🧪 Testbench Details
-
-- Uses a `for` loop to apply all 8 input combinations
-- Inputs change every 100 ns
-- Simulation stops automatically using `$finish`
-- Verified using **XSim (Vivado Simulator)**
+📌 Concepts Covered:
+- Combinational logic
+- Gate-level modeling
+- Module instantiation
+- Testbench creation
+- Waveform analysis
 
 ---
 
-## 📈 Simulation
+## 🛠 Tools & Technologies
 
-- Behavioral simulation confirms correct Sum and Carry outputs
-- Waveforms match theoretical Full Adder truth table
-
----
-
-## 🛠 Tools Used
-
-- **Language:** Verilog HDL  
-- **Simulator:** XSim  
-- **EDA Tool:** Xilinx Vivado 2018.2  
+- **Language:** Verilog HDL
+- **EDA Tool:** Xilinx Vivado (2018.2)
+- **Simulator:** XSim
 
 ---
 
-## ✅ Status
+## 🎯 Purpose
 
-✔ Design implemented  
-✔ Simulation verified  
-✔ Ready for synthesis  
+This repository is intended for:
+- Learning Verilog HDL
+- Understanding digital logic design
+- Academic coursework and lab practice
+- Preparing for exams such as **GATE (ECE)**
 
 ---
 
@@ -85,6 +55,16 @@ RGUKT Srikakulam
 
 ---
 
+## 📌 Future Additions
+
+- Ripple Carry Adder
+- Multiplexers & Demultiplexers
+- Encoders & Decoders
+- Sequential Circuits (Flip-Flops, Counters)
+- FSM-based designs
+
+---
+
 ## 📜 License
 
-This project is for educational purposes.
+This repository is maintained for educational purposes.
