@@ -4,11 +4,9 @@ This repository contains a collection of **Verilog HDL projects** developed for 
 
 Each project is organized in its own folder with source files and a dedicated README.
 --
-# Projects
-## [FullAdder](FullAdder)
---
-## 📌 Future Additions
-
+# Projects 
+> ## [FullAdder](FullAdder)
+###  Future Additions
 - Ripple Carry Adder
 - Multiplexers & Demultiplexers
 - Encoders & Decoders
@@ -16,8 +14,7 @@ Each project is organized in its own folder with source files and a dedicated RE
 - FSM-based designs
 
 ---
-**Pavan Kumar Reddy Kamatham**  
-RGUKT Srikakulam
-## 📜 License
+**Pavan Kumar Reddy Kamatham**  S221181 <br>
+Dept. of ECE | RGUKT Srikakulam
 
 This repository is maintained for educational purposes.
