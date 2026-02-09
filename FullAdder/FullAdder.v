@@ -1,30 +1,35 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 01/27/2026 06:26:33 PM
-// Design Name: 
+// Company: rgukt srikakulam
+// Engineer: Pavan Kumar Reddy Kamatham
+//
+// Create Date: 02/09/2026 08:31:16 PM
+// Design Name: FullAdder
 // Module Name: FullAdder
-// Project Name: 
+// Project Name: FullAdder 
 // Target Devices: 
-// Tool Versions: 
-// Description: 
+// Tool Versions: Xilinx Vivado 2018.2
+// Description:  Getting started with verilog using FullAdder
 // 
 // Dependencies: 
 // 
 // Revision:
 // Revision 0.01 - File Created
-// Additional Comments:
+// Additional Comments: NA
 // 
 //////////////////////////////////////////////////////////////////////////////////
-
-
-module FullAdder( output sum, carry , input a, b, cin);
-wire [2:0]w;
-xor (sum, a,b,cin);
-and (w[0],a,b);
-and (w[1],a,cin);
-and (w[2],b,cin);
-or (carry,w[0],w[1],w[2]);
+module FullAdder(
+    output sum,
+    output carry, // OR of Carries
+    input a,
+    input b,
+    input cin);
+                 
+    wire Isum; //Intermediate Sum
+    wire [1:0]Icarry ;//Intermediate Sum
+    
+    HalfAdder H1(Isum,Icarry[0],a,b);
+    HalfAdder H2(sum,Icarry[1],cin,Isum);
+    or o0(carry,Icarry[0],Icarry[1]);
+    
 endmodule

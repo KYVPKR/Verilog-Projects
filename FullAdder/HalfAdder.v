@@ -4,9 +4,9 @@
 // Engineer: Pavan Kumar Reddy Kamatham
 //
 // Create Date: 02/09/2026 08:31:16 PM
-// Design Name: FullAdderTB
-// Module Name: FullAdderTB
-// Project Name: FullAdder
+// Design Name: HalfAdder
+// Module Name: HalfAdder
+// Project Name: FullAdder 
 // Target Devices: 
 // Tool Versions: Xilinx Vivado 2018.2
 // Description:  Getting started with verilog using FullAdder
@@ -18,29 +18,14 @@
 // Additional Comments: NA
 // 
 //////////////////////////////////////////////////////////////////////////////////
-module FullAdderTB;
-
-    reg a,b,cin; // to connect inputs
-    integer i; // for loop iteration
-    wire sum;
-    wire carry; // to connect outputs
+module HalfAdder(
+    output z,
+    output y,
+    input a, 
+    input b
+    );
     
-    // FullAdder Declaration
-    FullAdder Instance(
-    .a(a),
-    .b(b),
-    .cin(cin),
-    .sum(sum),
-    .carry(carry)
-    ); 
+    xor X1(z,a,b);//sum
+    and a1(y,a,b);//carry
     
-    initial
-    begin  
-     
-        for (i=0; i<8; i=i+1)begin
-            {a,b,cin} = i;
-            #100;
-        end
-            $finish;
-    end
 endmodule
