@@ -55,12 +55,14 @@ Implemented using:
 
 ---
 
-## 📈 Simulation
-
+## 📈 Simulation 
+<img width="1552" height="392" alt="Screenshot 2026-02-09 221056" src="https://github.com/user-attachments/assets/18156340-1d2b-4491-8b27-cd65c3acbb2d" />
 - Behavioral simulation confirms correct Sum and Carry outputs
 - Waveforms match theoretical Full Adder truth table
 
----
+## ⚡ Elaborated Design
+<img width="1553" height="544" alt="Screenshot 2026-02-09 221239" src="https://github.com/user-attachments/assets/fa4c465d-c4fe-498b-9a9c-204170508b54" />
+- This Circuit shows the functionality of the Full Adder made using two Half Adders
 
 ## 🛠 Tools Used
 
@@ -78,13 +80,8 @@ Implemented using:
 
 ---
 
-## 👤 Author
 
-**Pavan Kumar Reddy Kamatham**  
-RGUKT Srikakulam  
-
----
-
-## 📜 License
+**Pavan Kumar Reddy Kamatham**  S221181 <br> 
+Dept. of ECE | RGUKT Srikakulam  
 
 This project is for educational purposes.
