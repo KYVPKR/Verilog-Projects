@@ -5,8 +5,9 @@ This repository contains a collection of **Verilog HDL projects** developed for 
 
 # Projects 
 > ## [FullAdder](https://github.com/KYVPKR/Verilog-Projects/tree/main/FullAdder)
+> ## [Nbit Ripple Carry Adder](https://github.com/KYVPKR/Verilog-Projects/tree/main/Nbit_RippleCarryAdder)
 ###  Future Additions
-- Ripple Carry Adder
+
 - Multiplexers & Demultiplexers
 - Encoders & Decoders
 - Sequential Circuits (Flip-Flops, Counters)
